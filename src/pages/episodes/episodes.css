@@ -1,0 +1,184 @@
+.splitepisode {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.leftEpisode {
+  left: 0;
+  object-fit: cover;
+  background-color: #1a1e27;
+}
+
+.centeredEpisode {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.rightEpisode {
+  right: 0;
+  /* background-color: rgb(0, 3, 49); */
+  background-image: linear-gradient(135deg, #9796f0 10%, #FBC7D4 100%);
+}
+
+.episodeTitle {
+  font-size: 64px;
+  color: white;
+}
+
+.subscribeFooter {
+  /* margin-top: 500px; */
+  /* color: #707c84; */
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.cardspotifyepisodes { 
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  display: inline-flex;
+}
+
+.podcard {
+  background: #252832;
+  width: 1100px;
+  height: 500px;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  /* height: 250px; */
+  overflow: hidden;
+  margin: 25px;
+  
+transition: 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  background-color: transparent;
+  background: transparent;
+  border-radius: 4px;
+  object-fit: cover;
+  
+}
+
+.parentCard {
+  display: flex;
+  top: 30px;
+ margin-top: 40px;
+ flex-flow: wrap;
+ margin-left: 55px;
+}
+
+.episodeHeading {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+.allEpisode {
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  margin-top: 700px;
+  margin-left: 75px;
+  text-align: left;
+}
+
+.playIcon {
+vertical-align: middle;
+  margin-right: 4px;
+}
+
+
+.showAllButton {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+  width: 200px;
+  align-items: center;
+  top: 20px;
+  /* grid-column: 2; */
+  /* grid-row: 2; */
+}
+
+.showAllButton::before,
+.showAllButton::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7D8082;
+  transition: all .15s ease;
+}
+
+.showAllButton::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.showAllButton::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.showAllButton:active,
+.showAllButton:focus {
+  outline: none;
+}
+
+.showAllButton:active::before,
+.showAllButton:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.showAllButton:active::before {
+  top: 3px;
+}
+
+.showAllButton:active::after {
+  bottom: 3px;
+}
+
+.showAllButton:hover .button_sl {
+  width: calc(100% + 15px);
+}
+
+.showAllButton:hover .button_lg::after {
+  background-color: #fff;
+}

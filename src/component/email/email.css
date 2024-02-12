@@ -1,0 +1,71 @@
+.mailbox {
+    font-weight: 300;
+    font-size: 40px;
+    align-items: center;
+    font-family: 'Sora' sans-serif;
+    margin-bottom: 35px;
+  }
+  
+  .subscribe {
+    padding: 17px 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 0;
+    background-color: rgb(255, 56, 86);
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all .3s ease;
+    box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 40px;
+   }
+   
+   .subscribe:hover {
+    box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+   }
+   
+   .subscribe:active {
+    background-color: rgb(255, 56, 86);
+    /*50, 168, 80*/
+    box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 200ms;
+   }
+  
+   .mail {
+    margin-bottom: 30px;
+    padding: 230px;
+   }
+   
+   #email{
+    height: 30px;
+    width: 350px;
+   }
+
+   .socialMedia{
+    font-weight: 300;
+    font-size: 20px;
+    align-items: center;
+    font-family: 'Sora' sans-serif;
+    margin-bottom: 10px;
+   }
+
+   .childSocial {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .childSocial:hover {
+    background-color: white;
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+    transform: perspective(180px) rotateX(60deg) translateY(2px);
+    box-shadow: 0px 10px 10px rgb(1, 49, 182);
+  }

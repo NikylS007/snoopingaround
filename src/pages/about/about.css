@@ -1,0 +1,218 @@
+.imageabout {
+  object-fit: cover;
+  width: -webkit-fill-available;
+
+}
+
+.content {
+  position: absolute;
+}
+
+.rightabout {
+  right: 0;
+  background-color: #fbb021;
+}
+
+
+.centeredabout {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutdes {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #252222;
+  font-family: cursive;
+}
+
+.splitabout {
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.abouttitle {
+  margin-top: 680px;
+  margin-bottom: 20px;
+  color: #092436;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.aboutMano {
+  width: 550px;
+  height: 250px;
+  /* margin-left: 57px;
+  margin-bottom: 40px; */
+  outline-color: #4948487a;
+  outline-style: solid;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 24px;
+  display: contents;
+}
+
+.manoName {
+  text-align: center;
+  font-size: 28px;
+  margin: 20px 20px 20px 0px;
+}
+
+.manodes {
+  text-align: center;
+  font-size: 14px;  
+  margin: 20px 20px;
+}
+
+.aboutcontent {
+  /* display: flex; */
+}
+
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-left: 10px;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all .3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #f09433;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all .3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+}
+
+.connect {
+  display: flex;
+  margin-top: 10px;
+}
+
+.manoImg {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.manoImg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.aboutcard {
+  width: 500px;
+  height: 300px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.aboutcard:before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #FF5F6D, #FF9671);
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.aboutcard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.aboutcard:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.aboutcard-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.aboutcard-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.aboutcard-description {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.aboutcard-button {
+  padding: 10px 20px;
+  background-color: #FF5F6D;
+  color: #FFF;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.aboutcard-button:hover {
+  background-color: #FF3A4C;
+}

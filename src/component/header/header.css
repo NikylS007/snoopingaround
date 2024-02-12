@@ -1,0 +1,29 @@
+
+.header {
+    background-color: transparent !important;
+    padding-right: 79px;
+    padding-left: 118px;
+    color: black;
+    position: absolute !important;
+}
+
+.about {
+    float: right
+}
+#shrink, #godown{
+    transition: all 0.3s ease;
+}
+#shrink:hover{
+    transform: scale(0.8);
+}
+#godown:hover{
+    transform: translateY(6px);
+}
+
+.headerLogo {
+    width: 10% !important;
+}
+
+.episodeHeader {
+    color: white !important
+  }
